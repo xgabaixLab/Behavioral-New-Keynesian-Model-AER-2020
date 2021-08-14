@@ -1,4 +1,4 @@
-# Code accompanying “A Behavioral New Keynesian Model” by Xavier Gabaix, American Economic Review
+# Code accompanying “A Behavioral New Keynesian Model” by Xavier Gabaix, American Economic Review, 2020
 
 This repository contains codes accompanying [“A Behavioral New Keynesian Model”](https://www.aeaweb.org/articles?id=10.1257/aer.20162005) by Xavier Gabaix, American Economic Review, 2020. It is also available as an AEA Data and Code Repository: [openicpsr-117842](https://www.openicpsr.org/openicpsr/project/117842/version/V1/view). *Many thanks to Antonio Coppola (Harvard University) for help in preparing this replication package.*
 
