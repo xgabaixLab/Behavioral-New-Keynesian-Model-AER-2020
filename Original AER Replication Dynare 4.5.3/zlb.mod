@@ -7,7 +7,7 @@
 // -------------------------------------------------------------------------
 
 // Endogenous variables
-var     pi               // inflation
+var     pi              // inflation
         x;               // welfare-relevant output gap
     
 // Exogenous variables   
@@ -26,7 +26,7 @@ set_param_value('rNZLB',rNZLB);     // r_n during the ZLB
     M = 1;
     Mf = 1;
 @#else
-    set_param_value('M',M);         % Uses param.mat, while for rational M specified explicitly
+    set_param_value('M',M);
     set_param_value('Mf',Mf);
 @#endif
 

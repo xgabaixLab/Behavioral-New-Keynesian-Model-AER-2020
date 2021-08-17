@@ -3,11 +3,11 @@
 //
 // AEA Data and Code Repository Project ID: openicpsr-117842
 //
-// Dynare model: ZLB experiments in BRNK
+// Dynare model: ZLB experiments in BRNK; alternative calibrations
 // -------------------------------------------------------------------------
 
 // Endogenous variables
-var     pi               // inflation
+var     pi,              // inflation
         x;               // welfare-relevant output gap
     
 // Exogenous variables   
@@ -15,26 +15,20 @@ varexo  i, rN;
 
 // Parameters
 parameters  M, Mf, beta, sigma, kappa, rNZLB;
-load param.mat;
 
+load('fig1param.mat')
 set_param_value('beta',beta);       // Discount factor
-set_param_value('sigma',sigma);
+set_param_value('sigma',sigma);     // 
 set_param_value('kappa',kappa);     // NKPC weight on output gap
 set_param_value('rNZLB',rNZLB);     // r_n during the ZLB
-
-@#if case=="rational"
-    M = 1;
-    Mf = 1;
-@#else
-    set_param_value('M',M);         % Uses param.mat, while for rational M specified explicitly
-    set_param_value('Mf',Mf);
-@#endif
+set_param_value('Mf',Mf);           // Firm rationality factor
+set_param_value('M',M);             // Consumer's rationality factor
 
 
 // Model
 model (linear);
 pi = beta*Mf*pi(+1) + kappa*x;          // NK Phillips Curve
-x = M*x(+1) - sigma*(i - pi(+1)-rN); 	// Dynamic IS curve
+x = M*x(+1) - sigma*(i - pi(+1)-rN); // Dynamic IS curve
 end;
 
 
@@ -56,10 +50,10 @@ steady;
 // Shocks
 shocks;
 var rN;
-periods 1:@{timeExitZLB};
+periods 1:40;
 values (rNZLB);
 var i;
-periods 1:@{timeExitZLB};
+periods 1:40;
 values 0;
 end; 
 

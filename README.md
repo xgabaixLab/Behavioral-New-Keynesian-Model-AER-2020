@@ -1,6 +1,9 @@
 # Code accompanying “A Behavioral New Keynesian Model” by Xavier Gabaix, American Economic Review, 2020
 
-This repository contains codes accompanying [“A Behavioral New Keynesian Model”](https://www.aeaweb.org/articles?id=10.1257/aer.20162005) by Xavier Gabaix, American Economic Review, 2020. It is also available as an AEA Data and Code Repository: [openicpsr-117842](https://www.openicpsr.org/openicpsr/project/117842/version/V1/view). *Many thanks to Antonio Coppola (Harvard University) for help in preparing this replication package.*
+This repository contains codes accompanying [“A Behavioral New Keynesian Model”](https://www.aeaweb.org/articles?id=10.1257/aer.20162005) by Xavier Gabaix, American Economic Review, 2020. It is also available as an AEA Data and Code Repository (for Dynare 4.5.3): [openicpsr-117842](https://www.openicpsr.org/openicpsr/project/117842/version/V1/view). 
+
+*Many thanks to Antonio Coppola (Harvard University) for help in preparing this replication package.
+Many thanks to Francesco Amodeo (UC San Diego) for updating the replication package to work with Dynare 4.6.4.*
 
 
 ## I. Overview

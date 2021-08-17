@@ -14,7 +14,7 @@ function plotOptPolCostpush(irfRat, irfBR, policyType, modelType)
 T = length(irfRat.x_epsU);
 xAxis = 0:T-1;
 
-figureName = ['IRFs under ',policyType,' Monetary Policy in ',modelType,' Model FA'];
+figureName = ['IRFs under ',policyType,' Monetary Policy in ',modelType,' Model'];
 fileName = ['OptPolCostpush',policyType,modelType,'.eps'];
 fig = figure('Name',figureName);
 set(gcf,'position',[400 300 1200 600]);
