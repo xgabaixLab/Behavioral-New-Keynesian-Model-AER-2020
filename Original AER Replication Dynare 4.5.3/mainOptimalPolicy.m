@@ -25,9 +25,9 @@ load result.mat;
 irfDiscretionBR = oo_.irfs;
 
 %% (I.2) Commitment policy
-clearvars -except irfDiscretionBR irfDiscretionRat
+
 % Basic model, rational agent
-dynare optPolCostpushBasic -Dpolicy="commitment" -Dcase="rational" 
+dynare optPolCostpushBasic -Dpolicy="commitment" -Dcase="rational"
 load result.mat;
 irfCommitmentRat = oo_.irfs;
 

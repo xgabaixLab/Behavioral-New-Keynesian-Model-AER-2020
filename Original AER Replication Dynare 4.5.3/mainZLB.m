@@ -9,12 +9,12 @@
 load('param.mat')
 
 %% Traditional Case
-dynare zlb -Dcase="rational" -DtimeExitZLB=40 noclearall
+dynare zlb -Dcase='rational' -DtimeExitZLB=40 noclearall
 outputRational = x;  
 inflationRational = pi;
 
 %% Behavioral Case
-dynare zlb -Dcase="behavioral" -DtimeExitZLB=40 noclearall
+dynare zlb -Dcase='behavioral' -DtimeExitZLB=40 noclearall
 outputBehavioral = x; 
 inflationBehavioral = pi;
 

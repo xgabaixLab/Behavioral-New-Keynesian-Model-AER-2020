@@ -9,10 +9,11 @@
 % set to the folder containing the file "main.m". Please also ensure that 
 % Dynare is in your Matlab path in order to execute the code.
 % -------------------------------------------------------------------------
-tic
+
 % Prepare environment
 clear all
 close all
+clc
 
 % Load parameters
 paramFull
@@ -45,6 +46,5 @@ for mm = 1:length(modFilenames)
     eval(['delete ', modFilenames{mm},'.m'])
     [~,~,~] = rmdir(modFilenames{mm},'s'); % remove unneeded directory, 's' forces deletion of nonempty folders
 end
-delete *.log *.mod~ *_dynamic.m *_results.mat *auxiliary_variables.m *_static.m *.m~
+delete *.log *.mod~ *_dynamic.m *_results.mat *auxiliary_variables.m *_static.m *.mat *.m~
 close all
-toc
